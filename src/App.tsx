@@ -13,8 +13,8 @@ export default function App() {
   return (
     <Container maxWidth="xl">
       <Stack justifyContent="center" alignItems="center" sx={{ marginTop: "5rem"}}>
-        <WeatherDisplay />
         <WeatherInput />
+        <WeatherDisplay />
       </Stack>
     </Container>
   )

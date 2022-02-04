@@ -8,8 +8,8 @@ const composeSafely = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || co
 
 export const initialState: IReduxStore = {
     inputs: {
-        city: '',
-        country: ''    
+        city: 'Manchester',
+        country: 'United Kingdom'    
     },
     weatherInfo: {
         data: []

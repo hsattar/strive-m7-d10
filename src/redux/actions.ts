@@ -1,2 +1,8 @@
-export const UPDATE_CITY = 'UPDATE_CITY'
-export const UPDATE_COUNTRY = 'UPDATE_COUNTRY'
+export const ACTIONS = {
+    UPDATE_CITY_AND_COUNTRY: 'UPDATE_CITY_AND_COUNTRY'
+}
+
+export const updateCityAndCountryAction = (city: string, country: string) => ({
+    type: ACTIONS.UPDATE_CITY_AND_COUNTRY,
+    payload: { city, country }
+})
