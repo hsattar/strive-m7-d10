@@ -12,6 +12,10 @@ export const weatherInforeducer = (state = initialState.weatherInfo, action: Any
                 lon: action.payload.lon
             }
         }
+        case ACTIONS.UPDATE_WEATHER_DATA: return {
+            ...state,
+            data: action.payload
+        }
         default: return state
     }
 }

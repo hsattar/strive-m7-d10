@@ -13,7 +13,7 @@ export const initialState: IReduxStore = {
     },
     weatherInfo: {
         coordinates: { lat: '', lon: ''},
-        data: []
+        data: null
     }
 }
 

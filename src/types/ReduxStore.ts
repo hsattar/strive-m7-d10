@@ -1,3 +1,5 @@
+import { WeatherData } from "./WeatherData"
+
 export interface IReduxStore {
     inputs: IInputs,
     weatherInfo: IWeatherInfo
@@ -10,10 +12,11 @@ export interface IInputs {
 
 export interface IWeatherInfo {
     coordinates: ICoordinates
-    data: []
+    data: WeatherData | null
 }
 
 export interface ICoordinates {
     lat: string
     lon: string
 } 
+
