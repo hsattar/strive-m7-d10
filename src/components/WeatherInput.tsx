@@ -7,7 +7,7 @@ import { lightBlue } from '@mui/material/colors'
 import { styled } from '@mui/material/styles'
 import { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { updateCityAndCountryAction } from '../redux/actions'
+import { updateCityAndCountryAction, updateLatAndLonAction } from '../redux/actions'
 
 const countryCodes = CountryCodes.map(country => country.name)
 
@@ -33,6 +33,7 @@ export default function WeatherInput() {
     const handleSubmit = (e: FormEvent) => {
         if (!city || !country) return
         dispatch(updateCityAndCountryAction(city, country))
+        dispatch(updateLatAndLonAction())
     }
 
     return (

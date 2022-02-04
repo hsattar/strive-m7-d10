@@ -9,5 +9,11 @@ export interface IInputs {
 }
 
 export interface IWeatherInfo {
+    coordinates: ICoordinates
     data: []
 }
+
+export interface ICoordinates {
+    lat: string
+    lon: string
+} 

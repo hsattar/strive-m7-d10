@@ -12,6 +12,7 @@ export const initialState: IReduxStore = {
         country: 'United Kingdom'    
     },
     weatherInfo: {
+        coordinates: { lat: '', lon: ''},
         data: []
     }
 }
