@@ -35,7 +35,7 @@ export const updateLatAndLonAction = () => async (dispatch: Dispatch, getState: 
 export const fetchWeatherAction = (lat: strNull, lon: strNull) => async (dispatch: Dispatch) => {
     try {
         if (!lat || !lon) return 
-        const { data } = await axios.get(`${BASE_URL}/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`)
+        const { data } = await axios.get(`${BASE_URL}/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`)
         dispatch({
             type: ACTIONS.UPDATE_WEATHER_DATA,
             payload: data
